@@ -38,41 +38,32 @@
 <body <?php body_class(); ?>>
 	<script type="text/javascript"
 		src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript"
-		src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/materialize.min.js"></script>
-			
+	<script type="text/javascript" src=src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/materialize.min.js"></script>
+
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
-		<header id="masthead" class="cabecalho" role="banner">
-				<div class="site-branding">
-				<?php
-				if (is_front_page () && is_home ()) :
-					?>
-						<h1 class="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-					</h1>
-					<?php else : ?>
-						<p class="site-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-					</p>
-					
-				
-				<?php endif;
-				
-				$description = get_bloginfo ( 'description', 'display' );
-				if ($description || is_customize_preview ()) :
-					?>
-						<p class="site-description"><?php echo $description; ?></p>
-					
-				
-				
-				<?php
-endif;
-				?>
+		<header id="masthead" class="cabecalho identidade" role="banner">
+			<div class="site-branding">
+				<h1 class="site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><figure>
+							<img
+								src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png"
+								alt="SOUniversitário">
+						</figure></a>
+				</h1>
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-				</div>
-				<!-- .site-branding -->
-			</header>
+			</div>
+			<!-- .site-branding -->
+			<nav class="identidade">
+				<ul>
+				<li>Início</li>
+				<li>Categoria 1</li>
+				<li>Categoria 2</li>
+				<li>Categoria...</li>
+				<li>Quem Somos</li>
+				</ul>
+			</nav>
+		</header>
 
 		<div id="content" class="site-content">

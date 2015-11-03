@@ -1,5 +1,28 @@
 .cabecalho {
+	position: fixed;
+	width:100%;
 	display: block;
-	background-color: red;
 	text-align: center;
+	height:200px;
+}
+
+.identidade {
+	background-color: #362040;
+	color: #fff;
+}
+
+nav {
+	position:fixed;
+	top:200px;
+	box-shadow: 0px 0px rgba(0,0,0,0);
+}
+
+nav ul {
+	position:relative;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+nav ul li {
+	margin: 0 5px;
 }
