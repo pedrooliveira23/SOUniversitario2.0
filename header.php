@@ -55,13 +55,11 @@
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
 			</div>
 			<!-- .site-branding -->
-			<nav class="identidade">
+			<nav>
 				<ul>
-				<li>Início</li>
-				<li>Categoria 1</li>
-				<li>Categoria 2</li>
-				<li>Categoria...</li>
-				<li>Quem Somos</li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a></li>
+				<?php wp_list_categories('orderby=name&title_li='); ?> 
+				<li><a href="#">Quem Somos</a></li>
 				</ul>
 			</nav>
 		</header>
