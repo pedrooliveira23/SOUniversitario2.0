@@ -33,6 +33,24 @@
 	
 <![endif]-->
 	<?php wp_head(); ?>
+	
+	<script>
+	jQuery(window).scroll(function () {
+		if ($(this).scrollTop() < 200) {
+			document.getElementsByClassName("site-branding")[0].style.visibility = 'visible';
+			document.getElementsByClassName("site-branding")[0].style.opacity = '1';
+			document.getElementsByClassName("navegacao")[0].style.position="relative";
+			document.getElementsByClassName("navegacao")[0].style.top="95px";
+		} else {
+			document.getElementsByClassName("site-branding")[0].style.visibility = 'hidden';
+			document.getElementsByClassName("site-branding")[0].style.opacity = '0';
+			document.getElementsByClassName("navegacao")[0].style.position="fixed";
+			document.getElementsByClassName("navegacao")[0].style.top="0px";
+			document.getElementsByClassName("navegacao")[0].style.zIndex="1";
+		}
+	});
+	</script>
+	
 </head>
 
 <body <?php body_class(); ?>>
@@ -55,7 +73,7 @@
 				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
 			</div>
 			<!-- .site-branding -->
-			<nav>
+			<nav class="navegacao">
 				<ul>
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a></li>
 				<?php wp_list_categories('orderby=name&title_li='); ?> 
