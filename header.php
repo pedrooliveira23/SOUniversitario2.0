@@ -49,6 +49,16 @@
 			document.getElementsByClassName("navegacao")[0].style.zIndex="1";
 		}
 	});
+
+	jQuery(document).ready(function() {
+		  var $grid = $('#main'),
+		  $sizer = $grid.find('.shuffle__sizer');
+
+		  $grid.shuffle({
+		    itemSelector: '.picture-item',
+		    sizer: $sizer
+		  });
+		});
 	</script>
 	
 </head>
