@@ -31,3 +31,7 @@ nav ul li {
 	border-left: solid 2px #362040;
 	border-right: solid 2px #362040;
 }
+
+.read-more {
+	display: none;
+}

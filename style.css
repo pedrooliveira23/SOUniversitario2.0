@@ -1580,9 +1580,7 @@ px
 
 );
 }
-.hentry+.hentry {
-	border-top: 1px solid rgba(51, 51, 51, 0.1);
-}
+
 
 .post-thumbnail {
 	border: 0;
@@ -2667,12 +2665,14 @@ viewport {
 	;
 }
 
-.hentry, .page-header, .page-content {
+.page-header, .page-content {
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 	margin: 0 7.6923%;
 }
 
-.hentry+.hentry, .page-header+.hentry, .page-header+.page-content {
+
+
+.page-header+.hentry, .page-header+.page-content {
 	margin-top: 7.6923%;
 }
 
@@ -3784,13 +3784,13 @@ viewport {
 		font-size: 1.2rem;
 		line-height: 1.5;
 	}
-	.hentry, .page-header, .page-content {
+	.page-header, .page-content {
 		margin: 0 8.3333%;
 	}
 	.hentry {
 		padding-top: 8.3333%;
 	}
-	.hentry+.hentry, .page-header+.hentry, .page-header+.page-content {
+	.page-header+.hentry, .page-header+.page-content {
 		margin-top: 8.3333%;
 	}
 	.post-thumbnail {
@@ -4761,9 +4761,6 @@ viewport {
 	}
 	.site-description {
 		display: block;
-	}
-	.hentry+.hentry {
-		margin-top: 7.6923%;
 	}
 	.hentry.has-post-thumbnail {
 		padding-top: 7.6923%;
