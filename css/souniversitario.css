@@ -36,7 +36,8 @@ nav ul li {
 	display: none;
 }
 
-.card-title {
-	background-color: rgba(0,0,0,0.5);
-	width:100%;
+.black-text {
+	color: #000 !important;
 }
+
+.card

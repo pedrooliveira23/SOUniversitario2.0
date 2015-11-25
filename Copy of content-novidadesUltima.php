@@ -7,8 +7,9 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
+
 <article id="post-<?php the_ID(); ?>"
-<?php post_class('col s12 m6 l6'); ?>>
+<?php post_class('col s12 m12 l12'); ?>>
 	<div class="card-novidade">
 		<header class="card-image-novidade">
 			<?php
@@ -24,5 +25,6 @@
 
 	</div>
 </article>
+
 
 <!-- #post-## -->

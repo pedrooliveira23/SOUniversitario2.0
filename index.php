@@ -25,9 +25,11 @@ get_header(); ?>
 		</h1>
 	</header> <?php endif; ?> <?php
 	// Start the loop.
-	$num = 1;
+	$num=1;
 	while ( have_posts() ) : the_post();
-	if($num<=4) {
+	if($num==1) {
+		get_template_part( 'content', 'novidadesUltima');
+	} else if($num<=3 && $num > 1) {
 		get_template_part( 'content', 'novidades' );
 	} else {
 		/*
