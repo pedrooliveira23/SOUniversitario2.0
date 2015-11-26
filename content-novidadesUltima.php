@@ -10,13 +10,13 @@
 
 <article id="post-<?php the_ID(); ?>"
 <?php post_class('col s12 m12 l12'); ?>>
-	<div class="card-novidade">
-		<header class="card-image-novidade">
+	<div class="card">
+		<header class="card-image">
 			<?php
 			// Post thumbnail.
 			twentyfifteen_post_thumbnail ();
 			?>
-			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title-novidade">', '</span>' ); ?>
+			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title">', '</span>' ); ?>
 			</a>
 		</header>
 		<!-- .entry-header -->

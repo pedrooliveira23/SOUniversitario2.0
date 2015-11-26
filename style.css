@@ -1585,7 +1585,6 @@ px
 .post-thumbnail {
 	border: 0;
 	display: block;
-	margin-bottom: 2.4em;
 }
 
 .post-thumbnail img {
@@ -2680,10 +2679,6 @@ viewport {
 	border-top: 0;
 }
 
-.post-thumbnail {
-	margin-bottom: 2.4em;
-}
-
 .entry-header {
 	padding: 0 9.0909%;
 }
@@ -2996,9 +2991,6 @@ viewport {
 	}
 	.widget_rss .rss-date, .widget_rss cite {
 		line-height: 1.75;
-	}
-	.post-thumbnail {
-		margin-bottom: 3em;
 	}
 	.entry-title, .widecolumn h2 {
 		font-size: 35px;
@@ -3367,9 +3359,6 @@ viewport {
 		font-size: 13px;
 		font-size: 1.3rem;
 		line-height: 1.8462;
-	}
-	.post-thumbnail {
-		margin-bottom: 2.9474em;
 	}
 	.entry-title, .widecolumn h2 {
 		font-size: 39px;
@@ -3793,9 +3782,6 @@ viewport {
 	.page-header+.hentry, .page-header+.page-content {
 		margin-top: 8.3333%;
 	}
-	.post-thumbnail {
-		margin-bottom: 2.4em;
-	}
 	.entry-header {
 		padding: 0 10%;
 	}
@@ -4180,9 +4166,6 @@ viewport {
 	.widget_rss .rss-date, .widget_rss cite {
 		line-height: 1.75;
 	}
-	.post-thumbnail {
-		margin-bottom: 2.4706em;
-	}
 	.entry-title, .widecolumn h2 {
 		font-size: 35px;
 		font-size: 3.5rem;
@@ -4539,9 +4522,6 @@ viewport {
 		font-size: 13px;
 		font-size: 1.3rem;
 		line-height: 1.8462;
-	}
-	.post-thumbnail {
-		margin-bottom: 2.9474em;
 	}
 	.entry-title, .widecolumn h2 {
 		font-size: 39px;

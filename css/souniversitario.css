@@ -40,4 +40,7 @@ nav ul li {
 	color: #000 !important;
 }
 
-.card
+.card-title {
+	width: 100%;
+	background-color: rgba(0,0,0,0.5) !important;
+}
