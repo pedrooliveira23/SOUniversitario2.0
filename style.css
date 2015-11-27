@@ -1592,10 +1592,6 @@ px
 	margin: 0 auto;
 }
 
-a.post-thumbnail:hover, a.post-thumbnail:focus {
-	opacity: 0.85;
-}
-
 .entry-header {
 	padding: 0 7.6923%;
 }

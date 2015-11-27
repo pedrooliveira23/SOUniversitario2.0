@@ -8,8 +8,8 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>"
-<?php post_class('col s12 m6 l6'); ?>>
-	<div class="card">
+<?php post_class('col s12 m4 l4'); ?>>
+	<div class="card grid-novidade">
 		<header class="card-image">
 			<?php
 			// Post thumbnail.

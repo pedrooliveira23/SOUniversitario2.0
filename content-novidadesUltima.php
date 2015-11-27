@@ -9,7 +9,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>"
-<?php post_class('col s12 m12 l12'); ?>>
+<?php post_class('col s12 m8 l8'); ?>>
 	<div class="card">
 		<header class="card-image">
 			<?php
