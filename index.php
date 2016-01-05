@@ -17,16 +17,13 @@
 get_header(); ?>
 
 <div id="primary" class="content-area container">
-	<main id="main" class="site-main row" role="main"> 
-	
-	<?php if ( have_posts() ) : ?>
+	<main id="main" class="site-main row" role="main"> <?php if ( have_posts() ) : ?>
 
 	<?php if ( is_home() && ! is_front_page() ) : ?> <header>
 		<h1 class="page-title screen-reader-text">
 			<?php single_post_title(); ?>
 		</h1>
-	</header> <?php endif; ?> 
-	<?php
+	</header> <?php endif; ?> <?php
 	// Start the loop.
 	$num=1;
 	while ( have_posts() ) : the_post();
@@ -38,40 +35,19 @@ get_header(); ?>
 	$num++;
 	// End the loop.
 	endwhile;
-	?>
-	<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header>
+	?> 
+	<h2>Outros Artigos</h2>
+	<?php query_posts('cat=3&showposts=5'); ?>
+	<h3 class="cat-nome">Dicas</h3>
+	<?php if (have_posts()) : while (have_posts()) : the_post();
+  			get_template_part( 'content', 'page' ); ?>
+	<?php endwhile; endif; ?>
+	<?php query_posts('cat=1&showposts=5'); ?>
+	<h3 class="cat-nome">Sem Categoria</h3>
+	<?php if (have_posts()) : while (have_posts()) : the_post();
+  			get_template_part( 'content', 'page' ); ?>
+	<?php endwhile; endif; ?>
 	<?php
-
-	// Start the Loop.
-	
-	while ( have_posts() ) : the_post();
-	
-	/*
-	 * Include the Post-Format-specific template for the content.
-	 * If you want to override this in a child theme, then include a file
-	 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-	*/
-	get_template_part( 'content', get_post_format() );
-	
-	// End the loop.
-	endwhile;
-
-	// Previous/next page navigation.
-	the_posts_pagination( array(
-			'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-			'next_text'          => __( 'Next page', 'twentyfifteen' ),
-			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-	) );
-
-	// If no content, include the "No posts found" template.
-	else :
-	get_template_part( 'content', 'none' );
-
 	endif;
 	?> </main>
 	<!-- .site-main -->
