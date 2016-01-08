@@ -35,19 +35,27 @@ get_header(); ?>
 	$num++;
 	// End the loop.
 	endwhile;
-	?> 
-	<h2>Outros Artigos</h2>
-	<?php query_posts('cat=3&showposts=5'); ?>
-	<h3 class="cat-nome">Dicas</h3>
+	?> <?php query_posts('cat=8&showposts=4'); ?>
+	<h3 id="8" class="cat-nome scrollspy">Notícias</h3>
+	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-  			get_template_part( 'content', 'page' ); ?>
-	<?php endwhile; endif; ?>
-	<?php query_posts('cat=1&showposts=5'); ?>
-	<h3 class="cat-nome">Sem Categoria</h3>
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=9&showposts=5'); ?>
+	<h3 id="9" class="cat-nome scrollspy">Papo Curioso</h3>
+	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-  			get_template_part( 'content', 'page' ); ?>
-	<?php endwhile; endif; ?>
-	<?php
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=10&showposts=5'); ?>
+	<h3 id="10" class="cat-nome scrollspy">Diversão</h3>
+	<hr/>
+	<?php if (have_posts()) : while (have_posts()) : the_post();
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=11&showposts=5'); ?>
+	<h3 id="11" class="cat-nome scrollspy">Universidade</h3>
+	<hr/>
+	<?php if (have_posts()) : while (have_posts()) : the_post();
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=12&showposts=5'); ?>
+	<h3 id="12" class="cat-nome scrollspy">Guias</h3>
+	<hr/>
+	<?php if (have_posts()) : while (have_posts()) : the_post();
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php
 	endif;
 	?> </main>
 	<!-- .site-main -->

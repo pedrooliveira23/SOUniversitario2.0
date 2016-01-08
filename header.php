@@ -86,7 +86,7 @@
 			<nav class="navegacao">
 				<ul>
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a></li>
-				<?php wp_list_categories('orderby=name&title_li='); ?> 
+				<?php wp_list_categories('orderby=id&title_li='); ?> 
 				<li><a href="#">Quem Somos</a></li>
 				</ul>
 			</nav>

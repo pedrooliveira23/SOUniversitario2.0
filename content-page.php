@@ -9,14 +9,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>"
-<?php post_class('col s12 m4 l4'); ?>>
+<?php post_class('col s12 m3 l3'); ?>>
 	<div class="card">
 		<header class="card-image">
 			<?php
 			// Post thumbnail.
 			twentyfifteen_post_thumbnail ();
 			?>
-			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title">', '</span>' ); ?>
+			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title page">', '</span>' ); ?>
 			</a>
 		</header>
 		<!-- .entry-content -->
