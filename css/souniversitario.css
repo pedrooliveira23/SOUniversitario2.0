@@ -67,3 +67,18 @@ nav ul li {
 .cat-nome {
 	padding-top: 50px;
 }
+
+.maisPosts {
+	display:block;
+	margin: 50% 0;
+	padding: 25% 8px;
+}
+
+.maisPosts-link {
+	background-color: #009688;
+	margin: 1.5px 0
+}
+
+.maisPosts-link:hover {
+	background-color: #004D40;
+}

@@ -39,23 +39,23 @@ get_header(); ?>
 	<h3 id="8" class="cat-nome scrollspy">Notícias</h3>
 	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=9&showposts=5'); ?>
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?><a href="category/noticias/" class="col s12 m1 l1 maisPosts-link"><img class="maisPosts" src="<?php echo esc_url( get_template_directory_uri() ); ?>/genericons/Right-48.png"></a> <?php query_posts('cat=9&showposts=4'); ?>
 	<h3 id="9" class="cat-nome scrollspy">Papo Curioso</h3>
 	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=10&showposts=5'); ?>
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?><a href="category/papo-curioso/" class="col s12 m1 l1 maisPosts-link"><img class="maisPosts" src="<?php echo esc_url( get_template_directory_uri() ); ?>/genericons/Right-48.png"></a> <?php query_posts('cat=10&showposts=4'); ?>
 	<h3 id="10" class="cat-nome scrollspy">Diversão</h3>
 	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=11&showposts=5'); ?>
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?><a href="category/diversao/" class="col s12 m1 l1 maisPosts-link"><img class="maisPosts" src="<?php echo esc_url( get_template_directory_uri() ); ?>/genericons/Right-48.png"></a> <?php query_posts('cat=11&showposts=4'); ?>
 	<h3 id="11" class="cat-nome scrollspy">Universidade</h3>
 	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php query_posts('cat=12&showposts=5'); ?>
+	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?><a href="category/universidade/" class="col s12 m1 l1 maisPosts-link"><img class="maisPosts" src="<?php echo esc_url( get_template_directory_uri() ); ?>/genericons/Right-48.png"></a> <?php query_posts('cat=12&showposts=4'); ?>
 	<h3 id="12" class="cat-nome scrollspy">Guias</h3>
 	<hr/>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <?php
+	get_template_part( 'content', 'page' ); ?><a href="category/guias/" class="col s12 m1 l1 maisPosts-link"><img class="maisPosts" src="<?php echo esc_url( get_template_directory_uri() ); ?>/genericons/Right-48.png"></a> <?php endwhile; endif; ?> <?php
 	endif;
 	?> </main>
 	<!-- .site-main -->

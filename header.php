@@ -24,10 +24,6 @@
 <link type="text/css" rel="stylesheet"
 	href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/souniversitario.css"
 	media="screen,projection" />
-<script
-	src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.shuffle.modernizr.min.js"></script>
-<script
-	src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery.shuffle.min.js"></script>
 <!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	
@@ -49,16 +45,6 @@
 			document.getElementsByClassName("navegacao")[0].style.zIndex="1";
 		}
 	});
-
-	jQuery(document).ready(function() {
-		  var $grid = $('#main'),
-		  $sizer = $grid.find('.shuffle__sizer');
-
-		  $grid.shuffle({
-		    itemSelector: '.picture-item',
-		    sizer: $sizer
-		  });
-		});
 	</script>
 	
 </head>
@@ -66,7 +52,7 @@
 <body <?php body_class(); ?>>
 	<script type="text/javascript"
 		src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src=src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/materialize.min.js"></script>
+	<script type="text/javascript" src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/materialize.min.js"></script>
 
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
