@@ -28,8 +28,6 @@ nav ul li {
 	display: block;
 	padding: 0px 15px 0px 15px;
 	margin-left: -2px;
-	border-left: solid 2px #362040;
-	border-right: solid 2px #362040;
 }
 
 .read-more {
@@ -69,16 +67,27 @@ nav ul li {
 }
 
 .maisPosts {
-	display:block;
-	margin: 50% 0;
-	padding: 25% 8px;
+	margin-left: -58px;
+	margin-top: 6%;
+	float: right;
+	position: relative;
+	left: 37px;
 }
 
-.maisPosts-link {
-	background-color: #009688;
-	margin: 1.5px 0
+nav {
+	top: 0px !important;
 }
 
-.maisPosts-link:hover {
-	background-color: #004D40;
+nav ul a {
+	font-size: 18px !important;
+}
+
+footer.page-footer {
+	padding-top: 0;
+}
+
+footer.page-footer .footer-copyright {
+	height: 100px !important;
+	padding: 8% 0 !important;
+	line-height: 20px !important;
 }
