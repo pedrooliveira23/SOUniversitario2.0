@@ -91,3 +91,47 @@ footer.page-footer .footer-copyright {
 	padding: 8% 0 !important;
 	line-height: 20px !important;
 }
+
+.pesquisa, .widget_search {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.pesquisa {
+	width: 130px;
+}
+
+.widget_search {
+	width: 92% !important;
+	position: relative;
+	margin: 4px 0 0 0 !important;
+	top: 4px;
+}
+
+.search-field {
+	border-bottom: none !important;
+}
+
+::-webkit-input-placeholder {
+	color: #fff !important;
+	font-size: 18px !important;
+	text-align: center;
+}
+
+:-moz-placeholder {
+	color: #fff !important;
+	font-size: 18px !important;
+	text-align: center;
+}
+
+::-moz-placeholder {
+	color: #fff !important;
+	font-size: 18px !important;
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	color: #fff !important;
+	font-size: 18px !important;
+	text-align: center;
+}

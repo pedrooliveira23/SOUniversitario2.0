@@ -85,7 +85,7 @@
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a>
 					</li>
 					<?php wp_list_categories('orderby=id&title_li='); ?>
-					<li><a href="#">Quem Somos</a></li>
+					<li class="pesquisa"><?php the_widget( 'WP_Widget_Search', $instance, $args ); ?></li>
 				</ul>
 			</nav>
 		</header>
@@ -102,10 +102,11 @@
 						class="button-collapse"><i class="material-icons">menu</i> </a>
 					<ul class="side-nav" id="mobile-demo">
 						<ul>
+							<li><?php the_widget( 'WP_Widget_Search', $instance, $args ); ?>
+							</li>
 							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a>
 							</li>
 							<?php wp_list_categories('orderby=id&title_li='); ?>
-							<li><a href="#">Quem Somos</a></li>
 						</ul>
 					</ul>
 				</div>
