@@ -82,10 +82,35 @@
 			<!-- .site-branding -->
 			<nav class="navegacao teal darken-1" style="z-index: 10;">
 				<ul>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i
+							class="material-icons menu-icon">home</i>Início</a>
 					</li>
-					<?php wp_list_categories('orderby=id&title_li='); ?>
-					<li class="pesquisa"><?php the_widget( 'WP_Widget_Search', $instance, $args ); ?></li>
+					<li><a
+						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/noticias/"><i
+							class="material-icons menu-icon">language</i>Notícias</a></li>
+					<li><a
+						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/papo-curioso/"><i
+							class="material-icons menu-icon">question_answer</i>Papo Curioso</a></li>
+					<li><a
+						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/diversao/"><i
+							class="material-icons menu-icon">theaters</i>Diversão</a></li>
+					<li><a
+						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/universidade/"><i
+							class="material-icons menu-icon">class</i>Universidade</a></li>
+					<li><a
+						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/guias/"><i
+							class="material-icons menu-icon">explore</i>Guias</a></li>
+					<li class="pesquisa"><i class="material-icons pesquisar-icon menu-icon">search</i>
+						<div class="widget widget_search">
+							<form role="search" method="get" class="search-form"
+								action="<?php echo home_url( '/' ); ?>">
+								<label> <span class="screen-reader-text">Pesquisar por:</span> <input
+									type="search" class="search-field" placeholder="Pesquisar"
+									value="<?php echo get_search_query() ?>" name="s"
+									title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+								</label>
+							</form>
+						</div></li>
 				</ul>
 			</nav>
 		</header>

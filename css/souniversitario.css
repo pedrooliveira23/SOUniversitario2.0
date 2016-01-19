@@ -98,18 +98,24 @@ footer.page-footer .footer-copyright {
 }
 
 .pesquisa {
-	width: 130px;
+	width: 150px;
 }
 
 .widget_search {
-	width: 92% !important;
+	width: 80% !important;
 	position: relative;
-	margin: 4px 0 0 0 !important;
-	top: 4px;
+	top: 7px;
+	left: 4px;
 }
 
 .search-field {
 	border-bottom: none !important;
+	position: relative;
+	color: #fff;
+}
+
+.search-field:focus {
+	color: #000;
 }
 
 ::-webkit-input-placeholder {
@@ -134,4 +140,17 @@ footer.page-footer .footer-copyright {
 	color: #fff !important;
 	font-size: 18px !important;
 	text-align: center;
+}
+
+.menu-icon {
+	position: relative;
+	top: 5px;
+	margin-right: 4px;
+}
+
+.pesquisar-icon {
+	float: left;
+    margin: 14px 0px -39px -4px !important;
+    position: relative;
+    left: 8px;
 }
