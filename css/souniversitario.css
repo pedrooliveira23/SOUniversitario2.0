@@ -150,7 +150,30 @@ footer.page-footer .footer-copyright {
 
 .pesquisar-icon {
 	float: left;
-    margin: 14px 0px -39px -4px !important;
-    position: relative;
-    left: 8px;
+	margin: 14px 0px -39px -4px !important;
+	position: relative;
+	left: 8px;
+}
+
+.container-post {
+	width: 90% !important;
+}
+
+.post-thumbnail {
+	height: 500px;
+	width: 100%;
+}
+
+.post-thumbnail img {
+	width: 100%
+}
+
+.entry-content {
+	position: relative;
+    background-color: #fff !important;
+    padding-top: 32px !important;
+}
+
+.entry-content img {
+	width: 100%;
 }
