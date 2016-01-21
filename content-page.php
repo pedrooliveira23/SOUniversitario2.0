@@ -16,7 +16,7 @@
 			// Post thumbnail.
 			twentyfifteen_post_thumbnail ();
 			?>
-			
+			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title page">', '</span>' ); ?>
 		</header>
 		<!-- .entry-content -->
 		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>

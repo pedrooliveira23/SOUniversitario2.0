@@ -12,9 +12,9 @@
 
 <article
 	id="post-<?php the_ID(); ?>"
-	<?php post_class('container container-post'); ?>>
+	<?php post_class('container container-post row'); ?>>
 
-	<header class="entry-header">
+	<header class="entry-header col s12 m12 l12">
 		<?php
 		if ( is_single() ) :
 		the_title( '<h1 class="entry-title">', '</h1>' );
@@ -25,13 +25,15 @@
 	</header>
 	<!-- .entry-header -->
 
-
+	<div class="col s12 m12 l12">
 	<?php
 	// Post thumbnail.
 	twentyfifteen_post_thumbnail();
 	?>
+	</div>
 
 	<div class="entry-content">
+		<div class="col s12 m8 l8>
 		<?php
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
@@ -48,14 +50,15 @@
 				'separator'   => '<span class="screen-reader-text">, </span>',
 		) );
 		?>
-		<aside id="recent_post" class="widget">
+		</div>
+		<aside id="recent_post" class="col s12 m3 l3 right">
 			<?php if ( ! dynamic_sidebar( 'sidebar-primary' ) ) : ?>
-			<h5>Outros</h5>
+			<h3 class="leia-mais">Leia Mais</h3>
 			<ul>
 				<?php
 				$recent_posts = wp_get_recent_posts();
 				foreach( $recent_posts as $recent ){
-					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .get_the_post_thumbnail($recent["ID"]) .'<p class="wid">'.   $recent["post_title"].'</p></a> </li> ';
+					echo '<li class="leia-mais"><a href="' . get_permalink($recent["ID"]) . '" class="card"> <header class="card-image">' .get_the_post_thumbnail($recent["ID"]) .'<p class="card-title page leia-mais">'.   $recent["post_title"].'</p></header></a> </li> ';
 				}
 				?>
 			</ul>
@@ -71,7 +74,7 @@
 	endif;
 	?>
 
-	<footer class="entry-footer">
+	<footer class="entry-footer teal lighten-5 black-text">
 		<?php twentyfifteen_entry_meta(); ?>
 		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>

@@ -159,21 +159,37 @@ footer.page-footer .footer-copyright {
 	width: 90% !important;
 }
 
-.post-thumbnail {
+.img-post  .post-thumbnail {
 	height: 500px;
 	width: 100%;
 }
 
-.post-thumbnail img {
+.img-post .post-thumbnail img {
 	width: 100%
 }
 
 .entry-content {
-	position: relative;
     background-color: #fff !important;
-    padding-top: 32px !important;
+    padding-top: 52% !important;
 }
 
 .entry-content img {
 	width: 100%;
+}
+
+.leia-mais {
+	bottom: -31px !important;
+}
+
+li.leia-mais {
+	margin-bottom: 16px;
+}
+
+h3.leia-mais {
+	margin-top: 0px !important;
+	text-align: center;
+}
+
+.entry-title {
+	text-align: center;
 }
