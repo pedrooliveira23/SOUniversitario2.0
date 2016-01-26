@@ -63,7 +63,7 @@ nav ul li {
 }
 
 .cat-nome {
-	padding-top: 50px;
+	padding-top: 32px;
 }
 
 .maisPosts {
@@ -169,8 +169,8 @@ footer.page-footer .footer-copyright {
 }
 
 .entry-content {
-    background-color: #fff !important;
-    padding-top: 52% !important;
+	background-color: #fff !important;
+	padding-top: 52% !important;
 }
 
 .entry-content img {
@@ -181,15 +181,24 @@ footer.page-footer .footer-copyright {
 	bottom: -31px !important;
 }
 
-li.leia-mais {
-	margin-bottom: 16px;
-}
-
 h3.leia-mais {
-	margin-top: 0px !important;
-	text-align: center;
+	    margin-top: 48px !important;
 }
 
 .entry-title {
 	text-align: center;
+}
+
+.ancora {
+	display: block;
+	position: absolute;
+	height: 115px;
+	width: 100px;
+	margin-top: -115px;
+	z-index: 1000;
+	visibility: hidden;
+}
+
+.entry-footer {
+	margin-top: -96px;
 }

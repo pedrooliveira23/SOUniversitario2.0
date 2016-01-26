@@ -36,18 +36,24 @@ get_header(); ?>
 	// End the loop.
 	endwhile;
 	?> <?php query_posts('cat=8&showposts=4'); ?>
-	<h3 id="8" class="cat-nome scrollspy">Notícias</h3>
+	
+	<h3 class="cat-nome ">
+		<i class="material-icons menu-icon">language</i>Notícias
+	</h3>
+	<div class="ancora scrollspy" id="8"></div>
 	<hr />
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/noticias/"
 		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
-		class="material-icons">add</i> </a> 
-		<a style="margin: 0px 45%;"
+		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
 		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=9&showposts=4'); ?>
-	<h3 id="9" class="cat-nome scrollspy">Papo Curioso</h3>
+	<h3 class="cat-nome ">
+		<i class="material-icons menu-icon">question_answer</i>Papo Curioso
+	</h3>
+	<div class="ancora scrollspy" id="9"></div>
 	<hr />
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
@@ -57,38 +63,46 @@ get_header(); ?>
 		href="category/noticias/"
 		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=10&showposts=4'); ?>
-	<h3 id="10" class="cat-nome scrollspy">Diversão</h3>
+	<h3 class="cat-nome ">
+		<i class="material-icons menu-icon">theaters</i>Diversão
+	</h3>
+	<div class="ancora scrollspy" id="10"></div>
 	<hr />
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/diversao/"
 		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
-		class="material-icons">add</i></a> <a style="margin: 0px 45%;"
+		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
 		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=11&showposts=4'); ?>
-	<h3 id="11" class="cat-nome scrollspy">Universidade</h3>
+	<h3 id="11" class="cat-nome ">
+		<i class="material-icons menu-icon">class</i>Universidade
+	</h3>
+	<div class="ancora scrollspy" id="11"></div>
 	<hr />
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/universidade/"
 		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
-		class="material-icons">add</i></a> <a style="margin: 0px 45%;"
+		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
 		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=12&showposts=4'); ?>
-	<h3 id="12" class="cat-nome scrollspy">Guias</h3>
+	<h3 class="cat-nome ">
+		<i class="material-icons menu-icon">explore</i>Guias
+	</h3>
+	<div class="ancora scrollspy" id="12"></div>
 	<hr />
 	<?php if (have_posts()) : while (have_posts()) : the_post();
-	get_template_part( 'content', 'page' ); ?> <a
-		href="category/guias/"
+	get_template_part( 'content', 'page' ); ?> <a href="category/guias/"
 		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
-		class="material-icons">add</i></a> <a style="margin: 0px 45%;"
+		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
 		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
 		class="material-icons">add</i> </a> <?php endwhile; endif; ?> <?php
-	endif;
-	?> </main>
+		endif;
+		?> </main>
 	<!-- .site-main -->
 </div>
 <!-- .content-area -->

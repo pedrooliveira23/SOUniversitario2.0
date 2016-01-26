@@ -56,6 +56,7 @@
 	<script type="text/javascript">
 	jQuery( document ).ready(function(){
 		jQuery(".button-collapse").sideNav();
+		jQuery('.cat-nome').scrollSpy();
 		})
 	</script>
 	<script type="text/javascript"
@@ -86,19 +87,19 @@
 							class="material-icons menu-icon">home</i>Início</a>
 					</li>
 					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/noticias/"><i
+						href="<?php echo esc_url( home_url( '/' ) ); ?>#8"><i
 							class="material-icons menu-icon">language</i>Notícias</a></li>
 					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/papo-curioso/"><i
+						href="<?php echo esc_url( home_url( '/' ) ); ?>#9"><i
 							class="material-icons menu-icon">question_answer</i>Papo Curioso</a></li>
 					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/diversao/"><i
+						href="<?php echo esc_url( home_url( '/' ) ); ?>#10"><i
 							class="material-icons menu-icon">theaters</i>Diversão</a></li>
 					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/universidade/"><i
+						href="<?php echo esc_url( home_url( '/' ) ); ?>#11"><i
 							class="material-icons menu-icon">class</i>Universidade</a></li>
 					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>/category/guias/"><i
+						href="<?php echo esc_url( home_url( '/' ) ); ?>#12"><i
 							class="material-icons menu-icon">explore</i>Guias</a></li>
 					<li class="pesquisa"><i class="material-icons pesquisar-icon menu-icon">search</i>
 						<div class="widget widget_search">

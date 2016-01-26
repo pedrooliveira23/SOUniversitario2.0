@@ -10,9 +10,8 @@
  */
 ?>
 
-<article
-	id="post-<?php the_ID(); ?>"
-	<?php post_class('container container-post row'); ?>>
+<article id="post-<?php the_ID(); ?>"
+<?php post_class('container container-post row'); ?>>
 
 	<header class="entry-header col s12 m12 l12">
 		<?php
@@ -26,14 +25,15 @@
 	<!-- .entry-header -->
 
 	<div class="col s12 m12 l12">
-	<?php
-	// Post thumbnail.
-	twentyfifteen_post_thumbnail();
-	?>
+		<?php
+		// Post thumbnail.
+		twentyfifteen_post_thumbnail();
+		?>
 	</div>
 
 	<div class="entry-content">
-		<div class="col s12 m8 l8>
+		<div
+			class="col s12 m12 l12>
 		<?php
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
@@ -51,34 +51,44 @@
 		) );
 		?>
 		</div>
-		<aside id="recent_post" class="col s12 m3 l3 right">
-			<?php if ( ! dynamic_sidebar( 'sidebar-primary' ) ) : ?>
-			<h3 class="leia-mais">Leia Mais</h3>
+			
+			<aside id="recent_post" class="col s12 m3 l3 right">
+				<?php if ( ! dynamic_sidebar( 'sidebar-primary' ) ) : ?>
+
+				<?php endif; ?>
+			</aside>
+		</div>
+		<!-- .entry-content -->
+
+		<?php
+		// Author bio.
+		if ( is_single() && get_the_author_meta( 'description' ) ) :
+		get_template_part( 'author-bio' );
+		endif;
+		?>
+
+		<footer class="entry-footer teal lighten-5 black-text">
+			<?php twentyfifteen_entry_meta(); ?>
+			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+		</footer>
+		<!-- .entry-footer -->
+
+		<div id="recent_post" class="row">
+			<h3 class="cat-nome leia-mais">Leia Também</h3>
+			<hr />
 			<ul>
 				<?php
 				$recent_posts = wp_get_recent_posts();
+				$num = 0;
 				foreach( $recent_posts as $recent ){
-					echo '<li class="leia-mais"><a href="' . get_permalink($recent["ID"]) . '" class="card"> <header class="card-image">' .get_the_post_thumbnail($recent["ID"]) .'<p class="card-title page leia-mais">'.   $recent["post_title"].'</p></header></a> </li> ';
+					if($num < 6 && $recent["ID"] != get_the_ID()) {
+						echo '<li class="leia-mais col s12 m2 l2"><a href="' . get_permalink($recent["ID"]) . '" class="card"> <header class="card-image">' .get_the_post_thumbnail($recent["ID"]) .'<p class="card-title page leia-mais">'.   $recent["post_title"].'</p></header></a> </li> ';
+						$num++;
+					}
 				}
 				?>
 			</ul>
-			<?php endif; ?>
-		</aside>
-	</div>
-	<!-- .entry-content -->
-
-	<?php
-	// Author bio.
-	if ( is_single() && get_the_author_meta( 'description' ) ) :
-	get_template_part( 'author-bio' );
-	endif;
-	?>
-
-	<footer class="entry-footer teal lighten-5 black-text">
-		<?php twentyfifteen_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer>
-	<!-- .entry-footer -->
+		</div>
 
 </article>
 <!-- #post-## -->
