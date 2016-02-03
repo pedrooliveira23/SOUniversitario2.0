@@ -169,8 +169,8 @@ footer.page-footer .footer-copyright {
 }
 
 .entry-content {
+	position:relative;
 	background-color: #fff !important;
-	padding-top: 52% !important;
 }
 
 .entry-content img {

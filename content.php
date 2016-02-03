@@ -24,7 +24,7 @@
 	</header>
 	<!-- .entry-header -->
 
-	<div class="col s12 m12 l12">
+	<div class="col s12 m12 l12 img-post">
 		<?php
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
@@ -32,8 +32,7 @@
 	</div>
 
 	<div class="entry-content">
-		<div
-			class="col s12 m12 l12>
+		<div class="col s12 m12 l12>
 		<?php
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
