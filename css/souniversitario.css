@@ -159,30 +159,8 @@ footer.page-footer .footer-copyright {
 	width: 90% !important;
 }
 
-.img-post  .post-thumbnail {
-	height: 500px;
-	width: 100%;
-}
-
-.img-post .post-thumbnail img {
-	width: 100%
-}
-
-.entry-content {
-	position:relative;
-	background-color: #fff !important;
-}
-
-.entry-content img {
-	width: 100%;
-}
-
 .leia-mais {
 	bottom: -31px !important;
-}
-
-h3.leia-mais {
-	    margin-top: 48px !important;
 }
 
 .entry-title {
@@ -200,5 +178,26 @@ h3.leia-mais {
 }
 
 .entry-footer {
-	margin-top: -96px;
+	margin-top: -160px;
+}
+
+.parallax-container {
+	height: 400px;
+	margin-bottom: 48px
+}
+
+.comments-area {
+	margin-top: 0px !important;
+}
+
+.form-submit input {
+	height: 60px !important;
+}
+
+textarea#comment {
+	min-height: 100px !important;
+}
+
+#main {
+	margin-bottom: -30px;
 }

@@ -45,10 +45,10 @@ get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/noticias/"
-		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
-		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-large-only btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=9&showposts=4'); ?>
 	<h3 class="cat-nome ">
 		<i class="material-icons menu-icon">question_answer</i>Papo Curioso
@@ -58,10 +58,10 @@ get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/papo-curioso/"
-		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
-		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-large-only btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=10&showposts=4'); ?>
 	<h3 class="cat-nome ">
 		<i class="material-icons menu-icon">theaters</i>Diversão
@@ -71,10 +71,10 @@ get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/diversao/"
-		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
-		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-large-only btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=11&showposts=4'); ?>
 	<h3 id="11" class="cat-nome ">
 		<i class="material-icons menu-icon">class</i>Universidade
@@ -84,10 +84,10 @@ get_header(); ?>
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <?php endwhile; endif; ?> <a
 		href="category/universidade/"
-		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
-		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-large-only btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <?php query_posts('cat=12&showposts=4'); ?>
 	<h3 class="cat-nome ">
 		<i class="material-icons menu-icon">explore</i>Guias
@@ -96,10 +96,10 @@ get_header(); ?>
 	<hr />
 	<?php if (have_posts()) : while (have_posts()) : the_post();
 	get_template_part( 'content', 'page' ); ?> <a href="category/guias/"
-		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-med-and-down maisPosts btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <a style="margin: 0px 45%;"
 		href="category/noticias/"
-		class="hide-on-large-only btn-floating btn waves-effect waves-light teal"><i
+		class="hide-on-large-only btn-floating btn waves-effect waves-light teal darken-1"><i
 		class="material-icons">add</i> </a> <?php endwhile; endif; ?> <?php
 		endif;
 		?> </main>

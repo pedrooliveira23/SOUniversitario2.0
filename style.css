@@ -1511,7 +1511,6 @@ blockquote.aligncenter, .wp-caption.aligncenter, img.aligncenter {
  * 12.1 Posts and pages
  */
 .hentry {
-	background-color: #fff;
 	padding-top: 7.6923%;
 	position: relative;
 }
@@ -1775,7 +1774,6 @@ px
 }
 
 .entry-footer {
-	background-color: #f7f7f7;
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
 	font-family: "Noto Sans", sans-serif;

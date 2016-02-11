@@ -57,6 +57,8 @@
 	jQuery( document ).ready(function(){
 		jQuery(".button-collapse").sideNav();
 		jQuery('.cat-nome').scrollSpy();
+	    jQuery('.parallax').parallax();
+	    jQuery('.scrollspy').scrollSpy();
 		})
 	</script>
 	<script type="text/javascript"
