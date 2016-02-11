@@ -201,3 +201,13 @@ textarea#comment {
 #main {
 	margin-bottom: -30px;
 }
+
+.resumo {
+	padding-top: 78px !important;	
+}
+
+.titulo-categoria {
+	margin-bottom: 16px;
+	text-align: center;
+	
+}

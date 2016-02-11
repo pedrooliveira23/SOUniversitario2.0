@@ -364,3 +364,15 @@ function new_excerpt_more($more) {
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '">...</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+	if( is_category() ) {
+
+		$title = single_cat_title( '', false );
+
+	}
+
+	return $title;
+
+});
