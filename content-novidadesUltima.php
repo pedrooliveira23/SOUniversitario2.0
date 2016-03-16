@@ -16,7 +16,9 @@
 			// Post thumbnail.
 			twentyfifteen_post_thumbnail ();
 			?>
-			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title">', '</span>' ); ?>
+			<a class="moretag hide-on-small-only" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title">', '</span>' ); ?>
+			</a>
+			<a class="moretag hide-on-med-and-up" href="<?php echo get_permalink($post->ID)?>"><span class="card-title"> <?php the_titlesmall('', '...', true, '40') ?></span>
 			</a>
 		</header>
 		<!-- .entry-header -->

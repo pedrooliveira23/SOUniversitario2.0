@@ -1,37 +1,32 @@
 <?php
 /**
- * The template part for displaying results in search pages
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
+ * The template used for displaying page content
  *
  * @package WordPress
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
 ?>
+<article id="post-<?php the_ID(); ?>"
+<?php post_class('col s12 m6 l6'); ?>>
+	<div class="card">
+		<header class="card-image">
+			<?php
+			// Post thumbnail.
+			twentyfifteen_post_thumbnail ();
+			?>
+			<a class="moretag" href="<?php echo get_permalink($post->ID)?>"> <?php the_title( '<span class="card-title">', '</span>' ); ?>
+			</a>
+		</header>
+		<a class="moretag" href="<?php echo get_permalink($post->ID)?>">
+		<div class="card-content resumo">
+				<?php the_excerpt() ?>
+		</div>
+		</a>
+		<!-- .entry-header -->
+		<!-- .entry-content -->
+			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
+	</div>
+</article>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php twentyfifteen_post_thumbnail(); ?>
-
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<?php if ( 'post' == get_post_type() ) : ?>
-
-		<footer class="entry-footer">
-			<?php twentyfifteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-footer -->
-
-	<?php else : ?>
-
-		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
-
-	<?php endif; ?>
-
-</article><!-- #post-## -->
+<!-- #post-## -->

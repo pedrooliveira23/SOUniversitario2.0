@@ -3526,7 +3526,7 @@ viewport {
 @media screen and (min-width: 59.6875em) {
 	.site {
 		margin: 0 auto;
-		max-width: 1403px;
+		//max-width: 1403px;
 	}
 	.sidebar {
 		float: left;

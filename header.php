@@ -88,22 +88,19 @@
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><i
 							class="material-icons menu-icon">home</i>Início</a>
 					</li>
-					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>#8"><i
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#8"><i
 							class="material-icons menu-icon">language</i>Notícias</a></li>
-					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>#9"><i
-							class="material-icons menu-icon">question_answer</i>Papo Curioso</a></li>
-					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>#10"><i
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#9"><i
+							class="material-icons menu-icon">question_answer</i>Papo Curioso</a>
+					</li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#10"><i
 							class="material-icons menu-icon">theaters</i>Diversão</a></li>
-					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>#11"><i
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#11"><i
 							class="material-icons menu-icon">class</i>Universidade</a></li>
-					<li><a
-						href="<?php echo esc_url( home_url( '/' ) ); ?>#12"><i
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#12"><i
 							class="material-icons menu-icon">explore</i>Guias</a></li>
-					<li class="pesquisa"><i class="material-icons pesquisar-icon menu-icon">search</i>
+					<li class="pesquisa"><i
+						class="material-icons pesquisar-icon menu-icon">search</i>
 						<div class="widget widget_search">
 							<form role="search" method="get" class="search-form"
 								action="<?php echo home_url( '/' ); ?>">
@@ -128,13 +125,34 @@
 								alt="SOUniversitário" style="width: 150px">
 						</figure> </a> <a href="#" data-activates="mobile-demo"
 						class="button-collapse"><i class="material-icons">menu</i> </a>
-					<ul class="side-nav" id="mobile-demo">
+					<ul class="side-nav teal" id="mobile-demo">
 						<ul>
-							<li><?php the_widget( 'WP_Widget_Search', $instance, $args ); ?>
+							<li>
+								<div class="widget widget_search">
+									<form role="search" method="get" class="search-form"
+										action="<?php echo home_url( '/' ); ?>">
+										<label> <span class="screen-reader-text">Pesquisar por:</span>
+											<input type="search" class="search-field mobile"
+											placeholder="Pesquisar"
+											value="<?php echo get_search_query() ?>" name="s"
+											title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+										</label>
+									</form>
+								</div>
 							</li>
-							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>"> Início </a>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Início</a>
 							</li>
-							<?php wp_list_categories('orderby=id&title_li='); ?>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#8">Notícias</a>
+							</li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#9">Papo
+									Curioso</a>
+							</li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#10">Diversão</a>
+							</li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#11">Universidade</a>
+							</li>
+							<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#12">Guias</a>
+							</li>
 						</ul>
 					</ul>
 				</div>

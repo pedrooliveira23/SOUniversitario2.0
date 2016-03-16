@@ -114,6 +114,13 @@ footer.page-footer .footer-copyright {
 	color: #fff;
 }
 
+.mobile {
+	border-bottom: none !important;
+	position: relative;
+	color: #fff;
+	margin:0 0 15px 10px !important;
+}
+
 .search-field:focus {
 	color: #000;
 }
@@ -198,6 +205,10 @@ textarea#comment {
 	min-height: 100px !important;
 }
 
+.submit {
+	background-color: #00897b !important;
+}
+
 #main {
 	margin-bottom: -30px;
 }
@@ -210,4 +221,8 @@ textarea#comment {
 	margin-bottom: 16px;
 	text-align: center;
 	
+}
+
+.side-nav ul li a {
+	color: #fff !important;
 }
