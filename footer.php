@@ -14,7 +14,7 @@
 	<footer class="page-footer teal">
           <div class="footer-copyright">
             <div class="container">
-            © 2016 Só Universitário | <a class="white-text" href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
+            © 2016 Só Universitário | <a class="white-text" href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a> | Saiba <a class="white-text" href="souniversitario.com/quem-somos">Quem Somos</a>
             </div>
           </div>
         </footer>
